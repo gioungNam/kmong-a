@@ -63,12 +63,6 @@ const ChatWindow = (props) => {
       joinOpenChat(curUrl);
     };
 
-    // const handleChange = (e) => {
-    //   // 사용자가 입력한 값을 상태 변수에 반영
-    //   setUrl(e.target.value);
-    // };
-
-
     const basicBoxStyles = {
         background:
             'url(/dgu_logo.png) center/cover no-repeat'
