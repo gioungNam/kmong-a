@@ -8,14 +8,11 @@ import {
   Input,
   InputGroup,
   InputLeftAddon,
-  InputRightElement,
   Stack,
-  Text, useToast, VStack
+  Text,  VStack
 } from "@chakra-ui/react";
 import {useEffect, useState} from "react";
 import {gql, useQuery } from "@apollo/client";
-import {AuthContext} from "../context/authContext";
-import {useChatForm} from "../utility/useChatForm";
 
 const QUERY_SUBJECT = gql`
 query Subject($subjectId: ID!) {
