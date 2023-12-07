@@ -9,7 +9,6 @@ export const querySubjects = async () => {
 export const querySubject = async (_, { subjectId }) => {
   const result = await Subject.findById(subjectId).populate("users");
 
-  console.log(result);
   return result;
 };
 
