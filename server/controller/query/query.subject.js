@@ -7,7 +7,10 @@ export const querySubjects = async () => {
 };
 
 export const querySubject = async (_, { subjectId }) => {
-  return Subject.findById(subjectId).populate("users");
+  const result = await Subject.findById(subjectId).populate("users");
+
+  console.log(result);
+  return result;
 };
 
 export const queryUserSubjects = async (_, __, { user }) => {

@@ -105,6 +105,7 @@ mongoose.connection.once("open", async () => {
       name: String!
       credit: Int
       classification: String
+      openurl: String
       capacity: Int
       users: [User!]!
       notices: [Notice!]!

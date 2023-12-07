@@ -65,7 +65,6 @@ const Class = (props) => {
     // 성공적으로 mutation이 실행된 경우에 수행될 콜백
       onCompleted: (data) => {
         // mutation이 성공적으로 실행되었을 때의 로직을 추가
-        console.log("Favorite added successfully");
       },
       // mutation 실행 중 에러가 발생한 경우에 수행될 콜백
       onError: (error) => {
@@ -80,7 +79,6 @@ const Class = (props) => {
         // 성공적으로 mutation이 실행된 경우에 수행될 콜백
           onCompleted: (data) => {
             // mutation이 성공적으로 실행되었을 때의 로직을 추가
-            console.log("Favorite canceled successfully");
           },
           // mutation 실행 중 에러가 발생한 경우에 수행될 콜백
           onError: (error) => {

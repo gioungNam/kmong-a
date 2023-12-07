@@ -9,6 +9,7 @@ const SubjectSchema = new mongoose.Schema({
   credit: Number,
   classification: String,
   capacity: Number,
+  openurl: String,
   users: [
     {
       type: mongoose.Schema.Types.ObjectId,
